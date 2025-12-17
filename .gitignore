@@ -1,0 +1,54 @@
+# =====================
+# Flutter / Dart
+# =====================
+.dart_tool/
+.build/
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+/build/
+coverage/
+
+# =====================
+# Android
+# =====================
+android/.gradle/
+android/key.properties
+android/app/google-services.json
+*.jks
+*.keystore
+
+# Android build outputs
+android/app/debug
+android/app/profile
+android/app/release
+
+# =====================
+# iOS
+# =====================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+ios/Runner/GoogleService-Info.plist
+**/ios/Flutter/.last_build_id
+
+# =====================
+# IDEs
+# =====================
+.idea/
+.vscode/
+*.iml
+
+# =====================
+# macOS
+# =====================
+.DS_Store
+
+# =====================
+# Logs & Misc
+# =====================
+*.log
+*.swp
+*.pyc
+*.class
