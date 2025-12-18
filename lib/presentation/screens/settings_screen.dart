@@ -61,8 +61,8 @@ class SettingsScreen extends StatelessWidget {
     showAboutDialog(
       context: context,
       applicationName: 'License Prep App',
-      applicationVersion: '1.0.0',
-      applicationLegalese: '© 2025 Criptic R&D',
+      applicationVersion: 'version1.0.0',
+      applicationLegalese: '©2026 Purna Lungeli',
     );
   }
 }
