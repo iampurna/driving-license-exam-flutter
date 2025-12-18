@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mfp/presentation/blocs/navigation/navigation_bloc.dart';
 import 'package:mfp/presentation/blocs/quiz/quiz.bloc.dart';
 import 'package:mfp/presentation/screens/splash_screen.dart';
+import 'package:mfp/presentation/widgets/connectivity_wrapper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +14,7 @@ void main() async {
       supportedLocales: const [Locale('en'), Locale('ne')],
       path: 'assets/translations',
       fallbackLocale: const Locale('en'),
-      useOnlyLangCode: true, // Add this line
+      useOnlyLangCode: true,
       saveLocale: true,
       child: const QuizApp(),
     ),
@@ -30,16 +31,18 @@ class QuizApp extends StatelessWidget {
         BlocProvider(create: (context) => QuizBloc()),
         BlocProvider(create: (context) => NavigationBloc()),
       ],
-      child: MaterialApp(
-        localizationsDelegates: [...context.localizationDelegates],
-        debugShowCheckedModeBanner: false,
-        supportedLocales: context.supportedLocales,
-        locale: context.locale,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          scaffoldBackgroundColor: Colors.white,
+      child: ConnectivityWrapper(
+        child: MaterialApp(
+          localizationsDelegates: [...context.localizationDelegates],
+          debugShowCheckedModeBanner: false,
+          supportedLocales: context.supportedLocales,
+          locale: context.locale,
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+            scaffoldBackgroundColor: Colors.white,
+          ),
+          home: const SplashScreen(),
         ),
-        home: const SplashScreen(),
       ),
     );
   }
