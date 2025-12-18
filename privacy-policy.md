@@ -63,10 +63,19 @@ Any changes will be reflected on this page.
 
 ---
 
-## Disclaimer
+## Content Attribution
 
-Driving License Exam is an **independent educational application**.
-It is **not affiliated with, endorsed by, or connected to any government or licensing authority**.
+Some educational PDF materials used in this application are publicly available resources obtained from the official website of the Department of Transport Management, Government of Nepal:
+
+https://ktmlc2.dotm.gov.np
+
+All rights to the original documents belong to their respective owners.
+
+---
+
+Disclaimer:
+This app is an independent educational tool. Some learning materials are sourced from publicly available documents on the official website of the Department of Transport Management, Government of Nepal (https://ktmlc2.dotm.gov.np).
+This app is not affiliated with or endorsed by any government authority.
 
 ---
 
