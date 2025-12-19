@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mfp"
+    namespace = "np.com.purnalungeli.drivinglicenseexam"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -37,7 +37,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.mfp"
+        applicationId = "np.com.purnalungeli.drivinglicenseexam"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
